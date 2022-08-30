@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+nav {
+  display: flex;
+  padding: 1.5rem;
+}
+
+nav i {
+  font-size: 1.3rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 1.5em;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+  margin: 1.3em auto;
+}
+
+.toggler {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+}
+
+.countries-container {
+  width: 90%;
+  margin: auto;
+}
+
+.country-card img {
+  width: 100%;
+}
+.country-card {
+  /*background-color: green; */
+  border-radius: 10px;
+  padding-top: 2rem;
+  margin: 0 2rem 2rem 2rem;
+  cursor: pointer;
+  height: 100%;
+}
+
+.details {
+  padding: 1rem;
+}
+
+.back {
+  padding: 1rem;
+  cursor: pointer;
+  margin: 2rem;
+  width: 30%;
+}
+
+.country {
+  width: 80%;
+  margin: auto;
+}
+
+.detail li {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.detail span {
+  font-weight: 300;
+}
+
+.borders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+.borders span {
+  padding: 1rem 2.5rem;
+}
+
+select {
+  padding: 1.5rem;
+  border: none;
+}
+
+@media (min-device-width: 760px) and (max-device-width: 1024px) {
+  .countries-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .countries-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  form {
+    flex-direction: row;
+  }
+
+  .country {
+    display: grid;
+    position: relative;
+    gap: 1.3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .border-container {
+    position: absolute;
+    top: 98%;
+    left: 34%;
+  }
+
+  form {
+    justify-content: space-between;
+  }
+
+  input {
+    width: 40%;
+  }
+
+  .back {
+    width: 10%;
+  }
+
+  .second-list {
+    margin-top: 3.5rem;
+  }
+}
